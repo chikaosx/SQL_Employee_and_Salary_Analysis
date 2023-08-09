@@ -13,7 +13,7 @@ The first query aimed to retrieve employee data from the database based on their
 ```
 SELECT * FROM employee WHERE city IN ('Mumbai', 'Delhi');
 ```
-![]()
+![](city.png)
 
 **Query 2: Name Pattern Matching**
 
@@ -21,7 +21,7 @@ The second query focused on extracting employees whose first names contained bot
 ```
 SELECT * FROM employee WHERE fname LIKE '%a%' AND fname LIKE '%e%';
 ```
-![]()
+![](name.png)
 
 **Query 3: Date of Birth Analysis**
 
@@ -29,7 +29,7 @@ The third query involved selecting employees based on their date of birth. The q
 ```
 SELECT * FROM employee WHERE YEAR(date_of_birth) > 1990;
 ```
-![]()
+![](dob.png)
 
 **Query 4: Salary Insights**
 
@@ -37,7 +37,7 @@ The fourth query was focused on the salary table. It aimed to extract salary dat
 ```
 SELECT * FROM salary WHERE Base < 1000000 ORDER BY Base ASC;
 ```
-![]()
+![](salary.png)
 
 **Query 5: Email Manipulation**
 
@@ -47,7 +47,7 @@ UPDATE employee
 SET email = SUBSTRING(email, 1, LEN(email) - 10)
 WHERE email LIKE '%@gmail.com';
 ```
-![]()
+![](email.png)
 
 **Conclusion:**
 
