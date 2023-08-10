@@ -54,7 +54,7 @@ The query focused on determining the total number of employees in the database. 
 ```
 SELECT COUNT(*) AS total_employees FROM employee;
 ```
-![]()
+![](count.png)
 
 **Query 7: Top Cities with Employee Distribution**
 
@@ -66,7 +66,7 @@ GROUP BY city
 HAVING COUNT(*) > 15
 ORDER BY num_employees DESC;
 ```
-![]()
+![](groupby.png)
 
 **Query 8: Most Used Pin Code**
 
@@ -77,9 +77,18 @@ FROM employee
 GROUP BY pincode
 ORDER BY pin_code_usage DESC;
 ```
-![]()
+![](pincode.png)
 
 
 **Conclusion:**
 
 The SQL queries performed on the employee and salary database provided valuable insights and allowed for data extraction and manipulation. These queries demonstrated how SQL can be used to filter and analyze data based on specific criteria, revealing patterns, trends, and anomalies within the dataset. The results of these queries can be leveraged for strategic decision-making, data cleaning, and further analysis in a business context.
+
+Through the power of SQL queries, we've gained valuable insights into our employee database. The analysis has provided us with information about the total number of employees, the distribution of employees across key cities, and the most frequently used pin code. These insights can guide decisions related to resource allocation, targeted initiatives, and understanding our employee base more comprehensively.
+
+
+
+
+
+
+
