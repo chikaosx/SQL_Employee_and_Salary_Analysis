@@ -1,6 +1,5 @@
-# SQL_Employee_and_Salary_Analysis
 
-**SQL Queries Report: Employee and Salary Analysis**
+# **SQL Queries Report: Employee and Salary Analysis**
 
 
 **Introduction:**
