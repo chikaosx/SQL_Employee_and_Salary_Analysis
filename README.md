@@ -48,6 +48,38 @@ WHERE email LIKE '%@gmail.com';
 ```
 ![](email.png)
 
+**Query 6: Total Number of Employees**
+
+The query focused on determining the total number of employees in the database. By employing the COUNT function, we obtained an accurate count of all employees. This simple yet essential statistic serves as a foundational element for understanding the scale of our employee dataset.
+```
+SELECT COUNT(*) AS total_employees FROM employee;
+```
+![]()
+
+**Query 7: Top Cities with Employee Distribution**
+
+This query delved into identifying the top cities with the highest number of employees. This involved grouping employees by their respective cities, counting the employees in each group, and sorting them in descending order. To provide a more insightful view, the result was filtered to display only cities with more than 15 employees.
+```
+SELECT city, COUNT(*) AS num_employees
+FROM employee
+GROUP BY city
+HAVING COUNT(*) > 15
+ORDER BY num_employees DESC;
+```
+![]()
+
+**Query 8: Most Used Pin Code**
+
+The third query aimed to uncover the most frequently used pin code among employees. By grouping employees based on pin codes and tallying the occurrences, we identified the pin code that was most commonly associated with employees.
+```
+SELECT pincode, COUNT(*) AS pin_code_usage
+FROM employee
+GROUP BY pincode
+ORDER BY pin_code_usage DESC;
+```
+![]()
+
+
 **Conclusion:**
 
 The SQL queries performed on the employee and salary database provided valuable insights and allowed for data extraction and manipulation. These queries demonstrated how SQL can be used to filter and analyze data based on specific criteria, revealing patterns, trends, and anomalies within the dataset. The results of these queries can be leveraged for strategic decision-making, data cleaning, and further analysis in a business context.
